@@ -1,4 +1,30 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "el-gr"
+title = "giannoug's blog"
+description = "Ιστορίες software και hardware engineering"
+paginate = 5
 theme = "PaperMod"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+title = "giannoug's blog"
+description = "Ιστορίες software και hardware engineering"
+author = "giannoug"
+
+[params.homeInfoParams]
+Title = "Καλωσήρθες 👋"
+Content = "Το περιεχόμενο του blog δημοσιεύτηκε σχεδόν μια δεκαετία πριν και πιθανώς να περιέχει ιδέες, απόψεις και ύφος που δεν με εκφράζουν πλέον"
+
+[[menu.main]]
+identifier = "home"
+name = "Αρχική"
+url = "/"
+weight = 10
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 20
